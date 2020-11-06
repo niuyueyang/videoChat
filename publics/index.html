@@ -161,7 +161,7 @@
 
         // 被呼叫方拒绝接听，主要针对呼叫方
         socket.on("call-rejected", data => {
-            alert(`User: "Socket: ${data.socket}" rejected your call.`);
+            alert(`用户: "${data.socket}" 拒绝了你的通话请求`);
             unselectUsersFromList();
         });
 
